@@ -1,0 +1,289 @@
+@import url('header.css');
+@import url(titulo.css);
+@import url(footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ESSENCIAL: evita overflow por padding */
+}
+
+body {
+  background-color: #0c0c0c;
+  font-family: Georgia, serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%; /* ESSENCIAL: impede imagens de vazar */
+  height: auto;
+  display: block;
+}
+
+/* ===== NOSSA MAESTRIA ===== */
+main section h2,
+.container-time > h2,
+.localizacao-contato h2,
+.container-depoimentos h2 {
+  text-align: center;
+  color: #d4af37;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
+  letter-spacing: 0.1em;
+  padding: 40px 16px 24px;
+}
+
+/* --- Cards Nossa Maestria --- */
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 16px 40px;
+}
+
+.card {
+  background-color: #d4af37;
+  width: 100%;           /* mobile: ocupa toda a largura disponível */
+  max-width: 220px;      /* mas não passa de 220px */
+  min-height: 200px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(212, 175, 55, 0.25);
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #0c0c0c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* --- Time / Mestres da Navalha --- */
+.container-time {
+  padding-bottom: 40px;
+}
+
+.card-time {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+.card-time-img {
+  text-align: center;
+  width: calc(50% - 24px); /* 2 por linha no mobile */
+  max-width: 160px;
+}
+
+.card-time-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-time-img p {
+  color: #fff;
+  font-size: 0.85rem;
+  padding-top: 8px;
+}
+
+/* --- Localização e Contato --- */
+.localizacao-contato h2 {
+  padding-bottom: 24px;
+}
+
+.container-localizacao-contato {
+  display: flex;
+  flex-direction: column; /* mobile: empilha verticalmente */
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px 40px;
+}
+
+.container-localizacao iframe {
+  width: 100%;        /* mobile: ocupa tudo */
+  max-width: 600px;
+  height: 280px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+
+.container-contato {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-localizacao {
+  background-color: #d4af37;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px 16px;
+}
+
+.card-localizacao p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.button-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.button-card a {
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: filter 0.3s, transform 0.3s;
+  text-align: center;
+  width: 100%;          /* mobile: botão ocupa toda largura */
+  max-width: 400px;
+  display: block;
+}
+
+.button-app {
+  background-color: #00395F;
+  color: #fff;
+}
+
+.button-whats {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.button-card a:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+/* --- Depoimentos --- */
+.container-depoimentos {
+  background-color: #1a1a1a;
+  margin-top: 20px;
+  padding: 0 16px 50px;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #080808;
+  color: #fff;
+  padding: 40px 16px 20px;
+  border-top: 1px solid #666;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* =============================================
+   TABLET  — a partir de 600px
+   ============================================= */
+@media (min-width: 600px) {
+  .container-cards {
+    gap: 32px;
+    padding: 0 32px 40px;
+  }
+
+  .card-time-img {
+    width: auto; /* volta ao tamanho natural */
+  }
+
+  .container-localizacao iframe {
+    height: 360px;
+  }
+}
+
+
+/* =============================================
+   DESKTOP  — a partir de 960px
+   ============================================= */
+@media (min-width: 960px) {
+  main section h2,
+  .container-time > h2,
+  .localizacao-contato h2,
+  .container-depoimentos h2 {
+    padding: 60px 20px 40px;
+  }
+
+  .container-cards {
+    gap: 80px;
+    padding: 0 40px 60px;
+  }
+
+  .card {
+    min-height: 250px;
+  }
+
+  .card-time {
+    gap: 5%;
+  }
+
+  /* lado a lado no desktop */
+  .container-localizacao-contato {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 0 40px 60px;
+  }
+
+  .container-localizacao iframe {
+    width: 600px;
+    height: 450px;
+  }
+
+  .container-contato {
+    max-width: 480px;
+  }
+
+  .card-localizacao {
+    height: auto;
+    min-height: 50px;
+  }
+}

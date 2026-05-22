@@ -1,0 +1,55 @@
+/* ===== HERO (imagem + título sobreposto) ===== */
+
+.hero {
+  position: relative;        /* âncora para o título absoluto */
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;               /* mobile: ocupa tela toda */
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.main-titulo {
+  position: absolute;        
+  bottom: 10%;               
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+}
+
+.main-titulo h1 {
+  color: #d4af37;
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 5vw, 3rem);
+  line-height: 1.4;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7); 
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 600px) {
+  .hero img {
+    max-height: 520px;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 960px) {
+  .hero img {
+    max-height: 680px;
+  }
+
+  .main-titulo {
+    bottom: 12%;
+    margin: 5%;
+    left: 47%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
