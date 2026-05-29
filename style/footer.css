@@ -7,7 +7,7 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;   /* mobile: empilhado */
+  flex-direction: column; /* mobile: empilhado */
   align-items: center;
   gap: 36px;
   text-align: center;
@@ -87,7 +87,7 @@ footer {
 /* ===== DESKTOP ===== */
 @media (min-width: 960px) {
   .footer-container {
-    flex-direction: row;        /* lado a lado */
+    flex-direction: row; /* lado a lado */
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;

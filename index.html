@@ -3,8 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Barbearia Arte Suave — Tradição em cada corte, excelência em cada detalhe. Agende seu horário agora."
+    />
+    <meta
+      name="keywords"
+      content="barbearia, corte de cabelo, barba, Barueri, Arte Suave, agendamento"
+    />
+    <meta name="author" content="Barbearia Arte Suave" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (aparece quando alguém compartilha o link no WhatsApp, Instagram, etc) -->
+    <meta property="og:title" content="Barbearia Arte Suave" />
+    <meta
+      property="og:description"
+      content="Tradição em cada corte, excelência em cada detalhe. Agende seu horário."
+    />
+    <meta property="og:image" content="img\IMG PRINCIPAL.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://precious-custard-a25928.netlify.app" />
+
+    <!-- Canonical (evita conteúdo duplicado) -->
+    <link rel="canonical" href="https://precious-custard-a25928.netlify.app/" />
+
     <link rel="icon" href="img/logo.png" />
     <title>Barbearia Arte Suave</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -40,21 +70,21 @@
       </div>
 
       <section class="nossa-maestria">
-        <h2>Nossa Maestria</h2>
+        <h2 data-aos="fade-up">Nossa Maestria</h2>
         <div class="container-cards">
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="0">
             <img src="img/img 1.png" alt="ícone" />
             <p>Transformando seu visual com precisão e técnica.</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="150">
             <img src="img/img 2.png" alt="ícone" />
             <p>Saúde para os fios e relaxamento para você.</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/img 3.png" alt="ícone" />
             <p>Saúde para os fios e relaxamento para você.</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="450">
             <img src="img/image 4.png" alt="ícone" />
             <p>Detalhes que fazem a diferença no seu dia a dia.</p>
           </div>
@@ -62,30 +92,30 @@
       </section>
 
       <section class="container-time">
-        <h2>Mestres da Navalha</h2>
+        <h2 data-aos="fade-up">Mestres da Navalha</h2>
         <div class="card-time">
-          <div class="card-time-img">
+          <div class="card-time-img" data-aos="zoom-in" data-aos-delay="0">
             <img
               src="img/image 8.png"
               alt="foto de um profissional da barbearia Studio New Look"
             />
             <p>Nome</p>
           </div>
-          <div class="card-time-img">
+          <div class="card-time-img" data-aos="zoom-in" data-aos-delay="150">
             <img
               src="img/image 8.png"
               alt="foto de um profissional da barbearia Studio New Look"
             />
             <p>Nome</p>
           </div>
-          <div class="card-time-img">
+          <div class="card-time-img" data-aos="zoom-in" data-aos-delay="300">
             <img
               src="img/image 8.png"
               alt="foto de um profissional da barbearia Studio New Look"
             />
             <p>Nome</p>
           </div>
-          <div class="card-time-img">
+          <div class="card-time-img" data-aos="zoom-in" data-aos-delay="450">
             <img
               src="img/image 8.png"
               alt="foto de um profissional da barbearia Studio New Look"
@@ -96,9 +126,9 @@
       </section>
 
       <section class="localizacao-contato" id="Contato">
-        <h2>Localização e Contato</h2>
+        <h2 data-aos="fade-up">Localização e Contato</h2>
         <div class="container-localizacao-contato">
-          <div class="container-localizacao">
+          <div class="container-localizacao" data-aos="fade-right">
             <!-- REMOVIDO width="600" height="450" do HTML — agora é controlado pelo CSS -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.2701507002655!2d-46.887814923008364!3d-23.509342754132295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03e8dc5d4ae1%3A0x5725789f3c18ca4e!2sInspire%20Business!5e0!3m2!1spt-BR!2sbr!4v1778628317768!5m2!1spt-BR!2sbr"
@@ -108,7 +138,7 @@
               title="Localização da barbearia"
             ></iframe>
           </div>
-          <div class="container-contato">
+          <div class="container-contato" data-aos="fade-left">
             <div class="card-localizacao">
               <p>📍 Av. Henriqueta Mendes Guerra, 1330 — 3º andar, sala 326</p>
             </div>
@@ -139,8 +169,8 @@
       </section>
 
       <section class="container-depoimentos" id="Depoimentos">
-        <h2>Depoimentos</h2>
-        <div class="script-avaliacao">
+        <h2 data-aos="fade-up">Depoimentos</h2>
+        <div class="script-avaliacao" data-aos="fade-up" data-aos-delay="200">
           <script src="https://elfsightcdn.com/platform.js" async></script>
           <div
             class="elfsight-app-2d65349a-9e07-4f4e-af8c-67c8ca3f34fd"
@@ -153,19 +183,19 @@
     <!-- FOOTER -->
     <footer>
       <div class="footer-container">
-        <div class="footer-logo">
+        <div class="footer-logo" data-aos="fade-up">
           <img src="img/logo.png" alt="Logo Studio New Look" />
           <p class="footer-nome">Barbearia Arte Suave</p>
         </div>
 
-        <nav class="footer-nav">
+        <nav class="footer-nav" data-aos="fade-up" data-aos-delay="150">
           <h3>Navegação</h3>
-          <a href="#home">Home</a>
-          <a href="#contato">Contato</a>
-          <a href="#depoimentos">Depoimentos</a>
+          <a href="#Home">Home</a>
+          <a href="#Contato">Contato</a>
+          <a href="#Depoimentos">Depoimentos</a>
         </nav>
 
-        <div class="footer-redes">
+        <div class="footer-redes" data-aos="fade-up" data-aos-delay="300">
           <h3>Redes Sociais</h3>
           <a
             href="https://www.instagram.com/barbeariaartesuave/"
@@ -215,6 +245,7 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

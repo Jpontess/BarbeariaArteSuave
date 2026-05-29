@@ -1,12 +1,12 @@
 /* ===== HERO (imagem + título sobreposto) ===== */
 
 .hero {
-  position: relative;        /* âncora para o título absoluto */
+  position: relative; /* âncora para o título absoluto */
   width: 100%;
 }
 
 .hero img {
-  width: 100%;               /* mobile: ocupa tela toda */
+  width: 100%; /* mobile: ocupa tela toda */
   max-height: 420px;
   object-fit: cover;
   object-position: center;
@@ -14,8 +14,8 @@
 }
 
 .main-titulo {
-  position: absolute;        
-  bottom: 10%;               
+  position: absolute;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -27,7 +27,7 @@
   font-family: Georgia, serif;
   font-size: clamp(1.1rem, 5vw, 3rem);
   line-height: 1.4;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7); 
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -52,4 +52,19 @@
     transform: translateX(-50%);
     text-align: center;
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-titulo h1 {
+  animation: fadeInUp 1s ease 0.4s both;
 }

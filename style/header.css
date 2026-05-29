@@ -1,12 +1,11 @@
-header{
+header {
   background-color: #161616;
-
 }
 
-header section{
+header section {
   display: flex;
-  align-items: center;  
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 8%;
 }
 
@@ -15,7 +14,7 @@ header section{
   flex-direction: column;
   gap: 12px;
   position: absolute;
-  top: 63px;        
+  top: 63px;
   left: 0;
   width: 100%;
   background-color: #161616;
@@ -35,7 +34,7 @@ header section{
   letter-spacing: 0.1em;
 }
 
-.header-logo img{
+.header-logo img {
   width: 45px;
 }
 

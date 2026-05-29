@@ -1,4 +1,4 @@
-@import url('header.css');
+@import url("header.css");
 @import url(titulo.css);
 @import url(footer.css);
 
@@ -45,8 +45,8 @@ main section h2,
 
 .card {
   background-color: #d4af37;
-  width: 100%;           /* mobile: ocupa toda a largura disponível */
-  max-width: 220px;      /* mas não passa de 220px */
+  width: 100%; /* mobile: ocupa toda a largura disponível */
+  max-width: 220px; /* mas não passa de 220px */
   min-height: 200px;
   border-radius: 16px;
   display: flex;
@@ -54,7 +54,9 @@ main section h2,
   align-items: center;
   justify-content: center;
   padding: 24px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -120,7 +122,7 @@ main section h2,
 }
 
 .container-localizacao iframe {
-  width: 100%;        /* mobile: ocupa tudo */
+  width: 100%; /* mobile: ocupa tudo */
   max-width: 600px;
   height: 280px;
   border: 0;
@@ -170,20 +172,22 @@ main section h2,
   border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  transition: filter 0.3s, transform 0.3s;
+  transition:
+    filter 0.3s,
+    transform 0.3s;
   text-align: center;
-  width: 100%;          /* mobile: botão ocupa toda largura */
+  width: 100%; /* mobile: botão ocupa toda largura */
   max-width: 400px;
   display: block;
 }
 
 .button-app {
-  background-color: #00395F;
+  background-color: #00395f;
   color: #fff;
 }
 
 .button-whats {
-  background-color: #25D366;
+  background-color: #25d366;
   color: #fff;
 }
 
@@ -220,7 +224,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* =============================================
    TABLET  — a partir de 600px
    ============================================= */
@@ -238,7 +241,6 @@ html {
     height: 360px;
   }
 }
-
 
 /* =============================================
    DESKTOP  — a partir de 960px
